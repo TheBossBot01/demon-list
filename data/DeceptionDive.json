@@ -3,10 +3,16 @@
     "name": "Deception Dive",
     "author": "Rustam",
     "creators": ["Rustam, ZenthicAlpha, and More"],
-    "verifier": "Julian1830_",
+    "verifier": "sanethegreat",
     "verification": "https://www.youtube.com/watch?v=jJIcx44_4-8",
     "percentToQualify": "75",
     "password": "",
     "records": [
+         {
+            "user": "Julian1830_",
+            "link": "",
+            "percent": 100,
+            "hz": 360
+        }
     ]
 }
