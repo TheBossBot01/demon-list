@@ -8,5 +8,18 @@
     "percentToQualify": "63",
     "password": "",
     "records": [
+         {
+            "user": "Nemesis Athena",
+            "link": "",
+            "percent": 100,
+            "hz": "?"
+        },
+ {
+            "user": "sanethegreat",
+            "link": "",
+            "percent": 100,
+            "hz": "?"
+        },
+
     ]
 }
