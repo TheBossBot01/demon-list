@@ -3,13 +3,18 @@
     "name": "Bloodbath",
     "author": "Riot",
     "creators": ["Riot, Etzer, and more"],
-    "verifier": "Julian1830_",
+    "verifier": "Ultroxus",
     "verification": "https://www.youtube.com/watch?v=VV0IccFXb0Q",
     "percentToQualify": "70",
     "password": "",
     "records": [
          {
             "user": "Nemesis Athena",
+            "link": "",
+            "percent": 100,
+            "hz": "?"
+        }       {
+            "user": "Julian1830_",
             "link": "",
             "percent": 100,
             "hz": "?"
