@@ -3,10 +3,16 @@
     "name": "Aftermath",
     "author": "IiExenityiI",
     "creators": ["Exenity, Satcho, and more"],
-    "verifier": "Nemesis Athena",
+    "verifier": "Ultroxus",
     "verification": "https://www.youtube.com/watch?v=yBpvgZ-4NAg",
     "percentToQualify": "57",
     "password": "",
     "records": [
+        {
+            "user": "Nemesis Athena",
+            "link": "",
+            "percent": 100,
+            "hz": 288
+        }
     ]
 }
