@@ -8,5 +8,11 @@
     "percentToQualify": "58",
     "password": "",
     "records": [
+            {
+            "user": "Ultroxus",
+            "link": "",
+            "percent": 100,
+            "hz": "?"
+        }
     ]
 }
