@@ -3,10 +3,16 @@
     "name": "Geochroma Reminisce (2P)",
     "author": "DezonGD",
     "creators": ["DezonGD and more"],
-    "verifier": "TheBossBot", "Julian1830_",
+    "verifier": "TheBossBot",
     "verification": "https://youtu.be/2OE11jVy0yI",
     "percentToQualify": "51",
     "password": "",
     "records": [
+           {
+            "user": "Julian1830_",
+            "link": "",
+            "percent": 100,
+            "hz": "?"
+        }
     ]
 }
