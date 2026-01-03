@@ -8,5 +8,17 @@
     "percentToQualify": "59",
     "password": "",
     "records": [
+            {
+            "user": "Julian1830_",
+            "link": "",
+            "percent": 100,
+            "hz": 240
+         },
+            {
+            "user": "TheBossBot",
+            "link": "https://youtu.be/w7T-KYVo1_Y",
+            "percent": 100,
+            "hz": 144
+         }
     ]
 }
