@@ -170,8 +170,19 @@ export default {
     },
     async mounted() {
         // Hide loading spinner
-        this.list = await fetchList();
-        this.editors = await fetchEditors();
+        try {
+    this.list = await fetchList();
+} catch (e) {
+    console.error("fetchList failed:", e);
+    this.list = null;
+}
+
+try {
+    this.editors = await fetchEditors();
+} catch (e) {
+    console.error("fetchEditors failed:", e);
+    this.editors = null;
+}
 
         // Error handling
         if (!this.list) {
