@@ -136,7 +136,7 @@ export default {
         roleIconMap,
         store
     }),
-       computed: {
+  computed: {
     level() {
         if (!this.list || !this.list.length) return null;
         if (!this.list[this.selected]) return null;
@@ -155,42 +155,41 @@ export default {
                 : this.level.verification
         );
     },
-    async mounted() {
-        // Hide loading spinner
-        try {
-    this.list = await fetchList();
-} catch (e) {
-    console.error("fetchList failed:", e);
-    this.list = null;
-}
+},
 
-try {
-    this.editors = await fetchEditors();
-} catch (e) {
-    console.error("fetchEditors failed:", e);
-    this.editors = null;
-}
+async mounted() {
+    try {
+        this.list = await fetchList();
+    } catch (e) {
+        console.error("fetchList failed:", e);
+        this.list = null;
+    }
 
-        // Error handling
-        if (!this.list) {
-            this.errors = [
-                "Failed to load list. Retry in a few minutes or notify list staff.",
-            ];
-        } else {
-            this.errors.push(
-                ...this.list
-                    .filter(([_, err]) => err)
-                    .map(([_, err]) => {
-                        return `Failed to load level. (${err}.json)`;
-                    })
-            );
-            if (!this.editors) {
-                this.errors.push("Failed to load list editors.");
-            }
+    try {
+        this.editors = await fetchEditors();
+    } catch (e) {
+        console.error("fetchEditors failed:", e);
+        this.editors = null;
+    }
+
+    if (!this.list) {
+        this.errors = [
+            "Failed to load list. Retry in a few minutes or notify list staff.",
+        ];
+    } else {
+        this.errors.push(
+            ...this.list
+                .filter(([_, err]) => err)
+                .map(([_, err]) => `Failed to load level. (${err}.json)`)
+        );
+
+        if (!this.editors) {
+            this.errors.push("Failed to load list editors.");
         }
+    }
 
-        this.loading = false;
-    },
+    this.loading = false;
+},
     methods: {
         embed,
         score,
