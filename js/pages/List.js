@@ -136,38 +136,27 @@ export default {
         roleIconMap,
         store
     }),
-        computed: {
-            level() {
-                if (!this.list || !this.list.length) return null;
-                if (!this.list[this.selected]) return null;
-                return this.list[this.selected][0];
-            },
-            video() {
-                if (!this.level) return null;
-        
-                if (!this.level.showcase) {
-                    return embed(this.level.verification);
-                }
-        
-                return embed(
-                    this.toggledShowcase
-                        ? this.level.showcase
-                        : this.level.verification
-                );
-            },
-        },
-        video() {
-            if (!this.level.showcase) {
-                return embed(this.level.verification);
-            }
-
-            return embed(
-                this.toggledShowcase
-                    ? this.level.showcase
-                    : this.level.verification
-            );
-        },
+       computed: {
+    level() {
+        if (!this.list || !this.list.length) return null;
+        if (!this.list[this.selected]) return null;
+        return this.list[this.selected][0];
     },
+    video() {
+        if (!this.level) return null;
+
+        if (!this.level.showcase) {
+            return embed(this.level.verification);
+        }
+
+        return embed(
+            this.toggledShowcase
+                ? this.level.showcase
+                : this.level.verification
+        );
+    },
+},
+
     async mounted() {
         // Hide loading spinner
         try {
